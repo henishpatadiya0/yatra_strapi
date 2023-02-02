@@ -1,0 +1,19 @@
+{
+  "kind": "collectionType",
+  "collectionName": "visa_types",
+  "info": {
+    "singularName": "visa-type",
+    "pluralName": "visa-types",
+    "displayName": "Visa type"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    }
+  }
+}
