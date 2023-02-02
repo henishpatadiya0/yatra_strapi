@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "forms",
+  "info": {
+    "singularName": "form",
+    "pluralName": "forms",
+    "displayName": "Form",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Field": {
+      "type": "string",
+      "required": true
+    },
+    "block_ids": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::block.block"
+    },
+    "Input_type": {
+      "type": "enumeration",
+      "enum": [
+        "email",
+        "text",
+        "date",
+        "color",
+        "checkbox",
+        "radio",
+        "file",
+        "image",
+        "password",
+        "number",
+        "submit",
+        "reset",
+        "dropdown"
+      ],
+      "required": true
+    },
+    "Placeholder": {
+      "type": "string"
+    }
+  }
+}
