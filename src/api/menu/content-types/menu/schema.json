@@ -1,0 +1,35 @@
+{
+  "kind": "collectionType",
+  "collectionName": "menus",
+  "info": {
+    "singularName": "menu",
+    "pluralName": "menus",
+    "displayName": "Menu",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Link": {
+      "type": "string",
+      "required": true
+    },
+    "Tooltip_text": {
+      "type": "string"
+    },
+    "Tooltip_position": {
+      "type": "string"
+    },
+    "sub_menus": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::sub-menu.sub-menu"
+    }
+  }
+}
